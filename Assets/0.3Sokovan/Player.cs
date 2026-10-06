@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    public GameManger gameManger;
+
     public float speed = 10f;
     private Vector2 moveDir;
     private Rigidbody playerRigidbody;
@@ -38,7 +40,9 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        playerRigidbody.linearVelocity = new Vector3(moveDir.x, playerRigidbody.linearVelocity.y, moveDir.y);
+        if (gameManger.isGameOver == true) return;
+
+        playerRigidbody.linearVelocity = new Vector3(moveDir.x*speed, playerRigidbody.linearVelocity.y, moveDir.y*speed);
     }
 
     public void OnMove(InputValue value)
