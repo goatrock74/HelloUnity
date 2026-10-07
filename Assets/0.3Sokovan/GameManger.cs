@@ -19,10 +19,11 @@ public class GameManger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isGameOver == true) return;
+
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
             SceneManager.LoadScene("Main");
 
-        if (isGameOver == true) return;
 
         int count = 0;
         for(int i = 0; i < 3; i++)
