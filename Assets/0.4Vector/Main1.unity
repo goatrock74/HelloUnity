@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4d553a832b9024698900fc8f55d2d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreAdder
-  scoreManger: {fileID: 872035779}
 --- !u!4 &151704109
 Transform:
   m_ObjectHideFlags: 0
@@ -501,7 +500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14835f514de5e1b4faf44672b0c9bd20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreSubtrator
-  scoreManger: {fileID: 872035779}
 --- !u!4 &928217773
 Transform:
   m_ObjectHideFlags: 0

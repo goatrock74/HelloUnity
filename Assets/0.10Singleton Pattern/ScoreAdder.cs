@@ -4,15 +4,18 @@ using UnityEngine.InputSystem;
 
 public class ScoreAdder : MonoBehaviour
 {
-    public GameScoreManger scoreManger;
+    private void Awake()
+    {
+        Debug.Log("Start Score " + GameScoreManger.GetInstance().GetScore());
+    }
 
     // Update is called once per frame
     void Update()
     {
         if(Mouse.current.leftButton.wasPressedThisFrame)
         {
-            scoreManger.AddScore(5);
-            Debug.Log(scoreManger.GetScore());
+            GameScoreManger.GetInstance().AddScore(5);
+            Debug.Log(GameScoreManger.GetInstance().GetScore());
         }
     }
 }
