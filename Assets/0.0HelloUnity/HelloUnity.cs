@@ -33,7 +33,7 @@ public class HelloUnity : MonoBehaviour
 
         //bool:참(true) 혹은 거짓(false)만 가질수있다.
         bool isBoy = true;
-        bool isGirl = false;
+        //Sbool isGirl = false;
 
         //char(character):한 문자만 가질수있다.
         char grade = 'A';
@@ -58,7 +58,7 @@ public class HelloUnity : MonoBehaviour
         //var:할당하는 값을 기준으로 타입을 정하여 그 타입만을 가질수있다.
         var myName = "I_Jemin";
         //string myName = "I_Jemin";
-        var myAge = 23;
+        //var myAge = 23;
         //int myAge = 23;
 
         Debug.Log("제민의 닉네임" + myName);
